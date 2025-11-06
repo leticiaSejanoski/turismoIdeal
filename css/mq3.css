@@ -1,0 +1,415 @@
+@charset "UTF-8";
+@media screen and (min-width:320px) and (max-width:578px) {
+
+    header {
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        /* Necessario para usar o comando abaixo*/
+        z-index: 1000;
+        padding: 0;
+        /*faz o menu ficar na frente do background-image */
+    }
+
+    header .opcoes a {
+        display: none;
+    }
+
+    header .logo img {
+        width: 150px;
+        margin: 5px 20px 5px 20px;
+        transition: all 0.5s;
+    }
+
+    .cabecalho {
+        display: block;
+        margin-right: 20px;
+    }
+
+
+
+    #btnMenu {
+        border: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5%;
+        /* background-color: #D7F3F3; */
+    }
+
+    #btnMenu img {
+        /* background-color: aqua; */
+        margin-top: 6px;
+    }
+
+    #linksMenu,
+    #btnMenu {
+        width: 150px;
+        height: 30px;
+        background-color: #d7f3f300;
+        color: var(--cor-texto);
+        font-size: 1.1em;
+        font-family: var(--fonte-texto);
+        cursor: pointer;
+    }
+
+
+    #linksMenu {
+        position: absolute;
+        /* border: 1px solid white; */
+        margin-top: 1.4%;
+        box-shadow: 0px 0px 5px 0px #000000b9;
+
+    }
+
+    #linksMenu.escondido {
+        display: none;
+    }
+
+    #linksMenu a {
+        display: block;
+        background-color: var(--fundo);
+
+        /* border-radius: 0px 0px 3px 3px; */
+        text-decoration: none;
+        padding: 4px;
+        color: var(--azul-escuro);
+
+    }
+
+    #linksMenu a:hover {
+        /* background-color: var(--azul-claro); */
+        color: var(--azul-claro);
+        border: 1px solid var(--azul-claro);
+    }
+
+    .tema {
+        display: none;
+    }
+
+    * p {
+        font-size: 1.1em;
+        text-shadow: none;
+    }
+
+
+    /*-----------CSS GALERIA-----------*/
+
+    #mainGaleria {
+        background-image: linear-gradient(to top, var(--azul-claro) 0%, var(--azul-escuro) 60%);
+        margin-bottom: 20px;
+    }
+
+
+    #main {
+        background-image: none;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .conteudo1 {
+        width: 80%;
+        align-items: left;
+    }
+
+    .conteudo1 div {
+        margin-top: 0;
+
+    }
+
+    .conteudo1 div h1 {
+        margin-top: 10%;
+        font-size: 2.5em;
+    }
+
+
+    .conteudo1 div p {
+        font-size: 1.1em;
+    }
+
+
+    #btnGaleria {
+        height: 35px;
+        font-size: 1.1em;
+        margin: 15px 0px 20px 0px;
+    }
+
+
+    .conteudo2 {
+        width: 65%;
+        flex-direction: column;
+
+    }
+
+    .imgGaleria {
+        width: 270px;
+        height: 350px;
+        border: 1px solid white;
+    }
+
+
+
+    /*-----------CSS GALERIA2-----------*/
+
+    #mainGaleria2 {
+
+        background-image: linear-gradient(to top, var(--azul-claro) 0%, var(--azul-escuro) 60%);
+    }
+
+    .divGaleriaH1 {
+        /* width: 100%; */
+        height: 230px;
+        /* background-color: #D7F3F3; */
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .divGaleriaH1 p {
+        display: block;
+        text-align: center;
+        font-size: 1.1em;
+        margin: 0px 18px 0px 18px;
+        font-family: var(--fonte-texto);
+        color: var(--cor-texto);
+    }
+
+    #galeria {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #galeriaH1 {
+        margin-top: 5%;
+        font-size: 2.5em;
+    }
+
+
+    .bloco {
+        width: 98%;
+        height: 50%;
+        padding: 5px;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .blocoDiv {
+        width: 50%;
+        height: 320px;
+        border-radius: 2px;
+        margin: 20px;
+        border: 1px solid white;
+    }
+
+    .blocoDiv img {
+        border-radius: 2px;
+    }
+
+    .blocoDiv:hover {
+        width: 50%;
+        height: 320px;
+    }
+
+    .blocoDiv h2 {
+        font-size: 1.5em;
+        text-align: left;
+        font-weight: normal;
+        margin: 20px 5px;
+        color: var(--laranja);
+        font-family: var(--fonte-titulos);
+    }
+
+    .blocoDiv p {
+        font-size: 1.1em;
+    }
+
+
+
+
+    /*--------CSS AFRICA---------*/
+
+    #mainAfrica {
+        flex-direction: column-reverse;
+        background-image: linear-gradient(to top, var(--azul-claro) 0%, var(--azul-escuro) 75%);
+    }
+
+    .blocoAfrica {
+        /* height: 45vh; */
+        /* background-color: aquamarine; */
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloco1 {
+        width: 100%;
+        margin-top: 0;
+        /* background-color: #D7F3F3; */
+        margin-bottom: 20px;
+        /* margin: 0; */
+    }
+
+    .bloco1 p {
+    font-size: 1.1em;
+}
+
+.bloco1 a {
+    color: #022642;
+}
+
+    .bloco1 h1 {
+        display: none;
+        /* color: var(--cor-texto);
+        margin: 0; */
+
+    }
+
+    .bloco2 {
+        margin: 0;
+        width: 100%;
+        /* height: 85vh; */
+        margin-top: 0;
+
+    }
+
+    .video {
+    background-color: var(--verde);
+    margin-top: 10%;
+    margin-bottom: 2%;
+    width: 70%;
+    height: 220px;
+    border: 1px solid var(--cor-texto);
+    box-shadow: 0 0 7px 3px #00000071;
+}
+
+
+
+    .texto h1 {
+        display: block;
+        margin-top: 13%;
+        font-size: 2.5em;
+        text-shadow: none;
+    }
+
+    .texto {
+        /* font-size: 1.1em; */
+        text-shadow: none;
+        margin-top: 0;
+
+    }
+
+    .texto p{
+        font-size: 1.1em;
+    }
+
+    .divAfricaImg {
+        /* background-color: #D7F3F3; */
+       max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .imgAfrica {
+        /* display: none; */
+        background-color: #D7F3F3;
+        border: 1px solid var(--cor-texto);
+        width: 100%;
+        height: 270px;
+        /* margin-right: 10px; */
+        padding: 5px 5px 7px 5px;
+        box-shadow: 0 0 7px 3px #00000071;
+        margin-bottom: 30px;
+    }
+
+    .imgAfrica img {
+        width: 100%;
+        height: 85%;
+    }
+
+    .imgAfrica p {
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: var(--fonte-texto);
+    }
+
+
+
+    /*--------CSS QUIZ---------*/
+    #mainQuiz {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(to top, var(--azul-claro) 0%, var(--azul-escuro) 100%);
+        margin: 20px 0px 20px 0px;
+    }
+
+    .fundoQuiz {
+        width: 100%;
+        height: 40vh;
+        margin-top: 0;
+        background-image: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .fundoQuiz div {
+        width: 70%;
+        margin: 0;
+        text-align: left;
+    }
+
+    .fundoQuiz div h1 {
+        font-size: 2.5em;
+        margin-top: 10%;
+        letter-spacing: 3px;
+    }
+
+     .fundoQuiz div p {
+      font-size: 1.1em;
+    }
+
+
+    .perguntasQuiz {
+        /* background-color: white; */
+        background-color: #ffffff00;
+        ;
+        margin: 0;
+        width: 100%;
+        height: 800px;
+        margin-bottom: 20px;
+    }
+
+    .caixas {
+        width: 80%;
+        background-image: none;
+        background-color: #ffffff56;
+    }
+
+    .resultado {
+        margin: 10px;
+    }
+
+    #resultadoP{
+        font-size: 1.1em;
+    }
+
+    .pergunta {
+        font-size: 1.1em;
+    }
+
+
+    footer p {
+        font-size: 1.1em;
+        text-align: center;
+    }
+}
