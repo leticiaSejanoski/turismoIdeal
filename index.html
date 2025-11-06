@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mq.css">
+    <title>Turismo Ideal</title>
+</head>
+
+<body class="claro">
+    <header>
+        <nav class="logo">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </nav>
+
+        <nav class="cabecalho">
+            <button id="btnMenu">Menu <img src="img/setaMenu.png" alt=""></button>
+            <div id="linksMenu" class="escondido">
+                <a href="index.html">Inicio</a>
+                <a href="america.html">América</a>
+                <a href="europa.html">Europa</a>
+                <a href="asia.html">Ásia</a>
+                <a href="africa.html">África</a>
+                <a href="oceania.html">Oceania</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobrenos.html">Sobre Nós</a>
+            </div>
+        </nav>
+
+        <nav class="opcoes">
+            <a href="index.html">Inicio</a>
+            <a href="america.html">América</a>
+            <a href="europa.html">Europa</a>
+            <a href="asia.html">Ásia</a>
+            <a href="africa.html">África</a>
+            <a href="oceania.html">Oceania</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobrenos.html">Sobre Nós</a>
+        </nav>
+        <nav class="tema">
+            <div onclick="mudaTema()"><img src="img/temaIcon.png" alt="claro/escuro"></div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <div class="introducao">
+            <h1>BEM-VINDO AO <span class="turismo">TURISMO IDEAL!</span></h1>
+            <h2><span class="explore">EXPLORE O MUNDO</span> — Onde sua próxima grande aventura começa!</h2>
+            <p><span class="turismo_txt">TURISMO IDEAL</span> é seu guia completo para desvendar os pontos turísticos
+                mais fascinantes de cada continente.<br>Aqui, o planejamento é parte da aventura! Navegue pelas nossas
+                seções e descubra destinos clássicos ou pérolas escondidas.</p>
+        </div>
+        <div class="separar"></div>
+        <div class="sugestoes">
+            <div class="mais_detalhes">
+                <h3>Encontre Sua Viagem Perfeita</h3>
+                <p>Não perca tempo em buscas! Desenvolvemos um quiz inteligente que cruza suas paixões e estilo de
+                    viagem com diversos destinos. Pare de procurar, comece a viajar!</p>
+                <a href="quiz.html"><input id="botao_a" type="button" value="MAIS DETALHES"></a>
+            </div>
+            <div class="mais_detalhes">
+                <h3>Sua Sugestão, Nosso Próximo Roteiro</h3>
+                <p>Junte-se a nós para receber as melhores notícias de destinos e sinta-se à vontade para enviar suas
+                    sugestões e tornar nosso mapa ainda mais completo.</p>
+                <a href="contato.html"><input id="botao_a" type="button" value="MAIS DETALHES"></a>
+            </div>
+            <div class="mais_detalhes">
+                <h3>Conecte-se e Viaje</h3>
+                <p>Compartilhe suas paixões. Explore galerias de tirar o fôlego e inspire-se com as jornadas de outros
+                    viajantes, construindo sua própria história.</p>
+                <a href="galeria.html"><input id="botao_a" type="button" value="MAIS DETALHES"></a>
+            </div>
+        </div>
+        <div class="separar"></div>
+
+        <h2 class="cards_titulo">Próxima Aventura? <span class="descubra"> Descubra o Mundo!</span></h2>
+        <div class="img_opcoes">
+            <a href="europa.html" class="cards_link">
+                <div class="cards">
+                    <img src="img/europa.jpg" alt="">
+                    <h3>EUROPA</h3>
+                </div>
+            </a>
+            <a href="america.html" class="cards_link">
+                <div class="cards">
+                    <img src="img/america.jpg" alt="">
+                    <h3>AMÉRICA</h3>
+                </div>
+            </a>
+            <a href="asia.html" class="cards_link">
+                <div class="cards">
+                    <img src="img/asia.jpg" alt="">
+                    <h3>ÁSIA</h3>
+                </div>
+            </a>
+            <a href="africa.html" class="cards_link">
+                <div class="cards">
+                    <img src="img/africa.jpg" alt="">
+                    <h3>ÁFRICA</h3>
+                </div>
+            </a>
+            <a href="oceania.html" class="cards_link">
+                <div class="cards">
+                    <img src="img/oceania.jpg" alt="">
+                    <h3>OCEANIA</h3>
+                </div>
+            </a>
+        </div>
+
+
+    </main>
+    <footer class="escuro">
+        <p>© 2025 | Projeto acadêmico – Universidade Positivo | <a href="sobre.html">TurismoIdeal</a></p>
+            
+    </footer>
+    <script src="js/menuMob.js"></script>
+    <script src="js/tema.js"></script>
+</body>
+
+</html>
