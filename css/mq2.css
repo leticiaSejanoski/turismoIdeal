@@ -1,0 +1,457 @@
+@charset "UTF-8";
+
+@media screen and (min-width:320px) and (max-width:578px) {
+
+   
+    header {
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        /* Necessario para usar o comando abaixo*/
+        z-index: 1000;
+        padding: 0;
+        /*faz o menu ficar na frente do background-image */
+    }
+
+    header .opcoes a {
+        display: none;
+    }
+
+    header .logo img {
+        width: 150px;
+        margin: 5px 20px 5px 20px;
+        transition: all 0.5s;
+    }
+
+    .cabecalho {
+        display: block;
+        margin-right: 20px;
+    }
+
+
+
+    #btnMenu {
+        border: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5%;
+        /* background-color: #D7F3F3; */
+    }
+
+    #btnMenu img {
+        /* background-color: aqua; */
+        margin-top: 6px;
+    }
+
+    #linksMenu,
+    #btnMenu {
+        width: 150px;
+        height: 30px;
+        background-color: #d7f3f300;
+        color: var(--cor-texto);
+        font-size: 1.1em;
+        font-family: var(--fonte-texto);
+        cursor: pointer;
+    }
+
+
+    #linksMenu {
+        position: absolute;
+        /* border: 1px solid white; */
+        margin-top: 1.4%;
+        box-shadow: 0px 0px 5px 0px #000000b9;
+
+    }
+
+    #linksMenu.escondido {
+        display: none;
+    }
+
+    #linksMenu a {
+        display: block;
+        background-color: var(--fundo);
+
+        /* border-radius: 0px 0px 3px 3px; */
+        text-decoration: none;
+        padding: 4px;
+        color: var(--azul-escuro);
+
+    }
+
+    #linksMenu a:hover {
+        /* background-color: var(--azul-claro); */
+        color: var(--azul-claro);
+        border: 1px solid var(--azul-claro);
+    }
+
+
+.tema{
+        display: none;
+    }
+
+    * p {
+  /* font-size: 1.1em; */
+  text-shadow: none;
+}
+
+.cabecalho_mqEuropa, .cabecalho_mqAsia{
+  background-color: var(--azul-escuro);
+  margin-bottom: 0;
+  margin: 20px 0px 0px 0px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  display: flex;
+  position: relative;  
+  justify-content: center;
+  align-items: center;
+}
+
+.cabecalho_mqEuropa div, .cabecalho_mqAsia div{
+  width: 70%;
+  margin: 20px 20px 0px 20px;
+     color: var(--cor-texto);
+   text-shadow: 1px 1px #00000075;
+  /* background-color: #d7f3f3; */
+}
+
+.cabecalho_mqAsia{
+    margin-top: 20px;
+}
+  
+   /* título no topo sem ficar atrás */
+.cabecalho_mqEuropa h1, .cabecalho_mqAsia h1{
+  /* background-image: var(--gradiente-header); */
+  /* margin-top: 22px; */
+    letter-spacing: 3px;
+  margin-bottom: 0;
+  font-size: 2.5em;
+  /* margin-left: 20px; */
+  text-align: left;
+  font-family: var(--fonte-titulos);
+  color: white;
+  /* padding-top: 2px; */
+  position: relative;   /* importante para z-index funcionar */
+  z-index: 2;
+}
+
+.cabecalho_mqAsia h1{
+margin-top: 10px;
+}
+
+.cabecalho_mqEuropa h1{
+   margin-top: 22px;
+}
+
+  
+   /* título no topo sem ficar atrás */
+.cabecalho_mqEuropa p, .cabecalho_mqAsia p{
+  /* background-color: var(--azul-escuro); */
+  margin-bottom: 0;
+  /* margin-left: 20px; */
+  font-size: 1.1em;
+  text-align: left;
+  font-family: var(--fonte-texto);
+  color: white;
+  /* padding-top:5%; */
+  position: relative;   /* importante para z-index funcionar */
+  z-index: 2;
+}
+
+
+
+    #main_europa{
+        background-image:  linear-gradient(to top, var(--azul-claro) 0%, var(--azul-escuro) 100%);;
+        height: 1600px;
+        margin-bottom: 20px;
+        padding: 0;
+        margin-top: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+     #main_asia{
+         background-image: linear-gradient(to top, var(--azul-claro) 0%, var(--azul-escuro) 60%);
+        min-height: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+     }
+
+    /* FOTMULARIO */
+
+   .fundo_form{
+    background-image: linear-gradient(to top, var(--azul-claro) 0%, var(--azul-escuro) 100%);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+}
+
+    /* caixa texto */
+    .text_form{
+    /* background-color: #023962; */
+    width: 100%;
+    height: 100%;
+
+}
+
+.conteudoTxt_form {
+    /* font-size: 15px; */
+    display: block;
+    /* background-color: blue;   */
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* titulo */
+  .h1_form{
+    font-size: 2.5em;
+    margin-top: 30px;
+    
+  }
+  
+  /* paragrafos */
+  
+  
+  /* caixa para dividir a tela do formulario */
+  .form{
+    /* background-color: #00c7fb; */
+    width: 100%;
+    height: 100%; 
+    margin-top: 5%;
+  }
+  
+  /* caixa do formulario */
+  .conteudo_form{
+    /* background-color: blueviolet; */
+    /* height:300px ; */
+    width: 90%;
+    height: 100%;
+    margin: 10px;
+    margin-bottom: 10%;
+    background: #ffffff61;
+    backdrop-filter: blur(10px); /* fundo da caixa levemente transparente e o que esta atras dela fica suavemente desfocado */
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+    /* EUROPA */
+
+/* imagem fundo europa */
+.fundo_europa{
+    display: none;
+    background-image: linear-gradient(to left, #204b9b98 0%, #367baf61 80%);
+    margin: 0;
+    
+   
+}
+
+/* fotos europa */
+#caixas_fotoEuropa{
+    background-color: var(--gradiente-header);
+    flex-direction: column;
+    margin-bottom: 10%;
+    /* margin-bottom: 0; */
+
+}
+
+  /* fotos europa */
+ .caixa_europa{
+    width: 80%;
+    transform: none;
+
+}
+
+/* fotos europa */
+.caixas_europa{
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+/* fotos europa */
+.h2Caixa_europa{
+    /* background-color: #ff790e; */
+    color: white;
+    margin: 0;
+    margin-bottom: 50%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* fotos europa */
+.imgCaixa1_europa{
+    background-image: url(../img/sopot.jpg);
+    
+    }
+
+    .imgCaixa2_europa{
+    background-image: url(../img/lofoten.jpg);
+
+    }
+    .imgCaixa3_europa{
+    background-image: url(../img/cavernaDePostojna.jpg);
+
+    }
+
+/* curiosidades europa  */
+.caixa_europa li{
+    font-size: 1.1em;
+    margin-top: 10px;
+    color:#023962;
+    font-family:  var(--fonte-texto);
+}
+
+/* ÁSIA */
+
+/* foto de fundo asia */
+ .fundo_asia{ 
+ display: none;
+ margin: 0;
+}
+
+
+  /* Fundo */
+  .fundo_asia {
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+  }
+
+ 
+   /* Ajusta só o segundo bloco (texto e imagem da Ásia) */
+    .caixa_asia {
+        background-color: var(--fundo);
+        border-radius: 5px;
+        margin: 0;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        width: 90%;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        height: auto; 
+    }
+
+    /* borda dos textos */
+.divText_asia{
+    /* background-color: #ff790e; */
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-radius: 5px;
+}
+
+    .txtDireita_asia {
+        width: 90%;
+        margin-left: 0;
+        order: 1; /* texto vem primeiro */
+    }
+
+    .img2_asia {
+        width: 90%;
+        height: auto;
+        order: 2; /* imagem vem depois do texto */
+        margin-top: 15px;
+        margin-bottom: 5%;
+    }
+
+    .img2_asia img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+      
+    }
+
+
+  /* Textos (ajuste geral) */
+  .txtEsquerda_asia,
+  .txtDireita_asia {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+    text-align: center;
+    border: none;
+  }
+
+  /* Texto e listas */
+  .divText_asia {
+    border: none;
+    padding: 5px;
+  }
+
+  .tituloImg_asia {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+
+  .pImg_asia {
+    font-size: 1.1em;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .lista_asia {
+    font-size: 1.1em;
+    margin-left: 0;
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  /* Imagens */
+  .img1_asia,
+  .img2_asia {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+
+  }
+
+  .img1_asia img,
+  .img2_asia img {
+    width: 60%;
+    height: 30%;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 2px #0000003f;
+  }
+
+  /* Ajustes das seções */
+  .conteudo1_asia,
+  .conteudo_asia {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  /* Cabeçalho da página Ásia */
+  .cabecalho_mqAsia {
+    padding: 15px;
+    text-align: center;
+  }
+
+
+  /* Menu */
+  header nav.opcoes {
+    display: none; /* Esconde menu completo no celular */
+  }
+
+
+  footer {
+    text-align: center;
+    font-size: 0.9em;
+ 
+  }
+
+footer p{
+    font-family: var(--fonte-texto);
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+}

@@ -1,0 +1,987 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --fundo: #022642;
+    --azul-escuro: #0667b3;
+    --azul-claro: #00c7fb;
+    --laranja: #ff7903;
+    --verde: #0b8185;
+    --cor-texto: #ffffff;
+    --cor-texto-america: #D7F3F3;
+    --fonte-titulos: 'Oswald', 'Arial', 'sans-serif';
+    --fonte-texto: 'Roboto', 'Arial', 'sans-serif';
+    --gradiente-header: linear-gradient(to left, var(--azul-escuro) 0%, #01508b 100%);
+    --gradiente-footer: linear-gradient(to left, var(--azul-escuro) 0%, #01508b 100%);
+    --gradiente-img: linear-gradient(to right, #0b193398 0%, #022846b7 80%);
+}
+
+.claro {
+    --fundo: #D7F3F3;
+    --cor-texto-america: #023962;
+    --gradiente-header: linear-gradient(to left, var(--azul-claro) 0%, var(--azul-escuro) 100%);
+    --gradiente-footer: linear-gradient(to left, var(--azul-claro) 0%, var(--azul-escuro) 100%);
+    --gradiente-img: linear-gradient(to left, #2d3f6166 0%, #367baf66 80%);
+}
+
+
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--fundo);
+}
+
+header {
+    background-image: var(--gradiente-header);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: var(--fonte-texto);
+    /* height: 100%; */
+    box-shadow: 0px 0px 5px 3px #000000b9;
+    cursor: pointer;
+}
+
+header,
+footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cabecalho {
+    display: none;
+}
+
+
+
+header .opcoes a {
+    font-weight: bold;
+    margin: 15px;
+    color: var(--cor-texto);
+    font-size: 1.3em;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+header .opcoes a:hover {
+    font-weight: bold;
+    margin: 15px;
+    color: var(--cor-texto);
+    font-size: 1.4em;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+/*#06375c*/
+header .logo img {
+    width: 200px;
+    transition: all 0.5s;
+}
+
+.tema {
+    cursor: pointer;
+}
+
+
+
+main {
+    min-height: 90vh;
+}
+
+
+.cabecalho {
+    display: none;
+    margin-left: auto;
+}
+
+#home {
+    /* min-height: 100vh; */
+    /*background-image: linear-gradient(to left, #2d3f6198 0%, #367baf61 80%), url('../img/paisagem7.webp');*/
+    /*background-image: linear-gradient(to left, rgba(0, 113, 199, 0.4) 0%, rgba(0, 113, 199, 0.4) 80%), url('../img/paisagem7.webp');*/
+    background-image: var(--gradiente-img), url('../img/paisagemFUNDO.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px 0px 20px 0px;
+    font-family: var(--fonte-texto);
+    padding-bottom: 30px;
+}
+
+
+#home h1 {
+    font-family: var(--fonte-titulos);
+
+}
+
+#america {
+    margin: 20px 0px 20px 0px;
+}
+
+#america_inicio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: var(--gradiente-img), url('../img/paisagemAmerica.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#oceania_inicio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: var(--gradiente-img), url(../img/paisagemOceania.jpg);
+    background-size: cover;
+    background-position:  center;
+    background-repeat: no-repeat;
+}
+
+#info {
+    background-image: var(--gradiente-img),
+}
+
+#sobrenos {
+    background-image: var(--gradiente-img), url('../img/sobrenosFUNDO.jpg');
+    background-size: cover;
+    background-position: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 4.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    /* text-transform: none; */
+        letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    font-family: var(--fonte-texto);
+}
+
+p,
+h3,
+li,
+table {
+    font-family: var(--fonte-texto);
+}
+
+.introducao {
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+}
+
+.introducao h1 {
+    margin-top: 5%;
+
+
+}
+
+.introducao p {
+    color: #ffffff;
+    font-size: 1.3em;
+    text-align: center;
+    margin-inline: 5%;
+    text-shadow: 1px 1px 2px #00000099;
+}
+
+.turismo_txt {
+    color: var(--cor-texto);
+
+}
+
+.sugestoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: flex-start;
+    margin: 25px 0px;
+    width: 100%;
+}
+
+.sugestoes p {
+    color: var(--cor-texto);
+    font-size: 1.3em;
+    height: 150px;
+    
+}
+
+.mais_detalhes h3 {
+    margin-top: 5%;
+    height: 15%;
+    color: #ffffff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.mais_detalhes {
+    width: 32%;
+    height:300px;
+    margin-inline: 5%;
+    background-color: #01223b27;
+    /* background-color: rgba(255, 255, 255, 0.986); */
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    outline: 2px solid white;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+#botao_a {
+    height: 40px;
+    width: 180px;
+    background-color: #bd5902f8;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 3px;
+    margin: auto;
+    border: 1px solid #bd5902f8;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#botao_a:hover {
+    background-color: #e46c04e7;
+    height: 40px;
+    width: 190px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 3px;
+    margin: auto;
+    border: 1px solid #bd5902f8;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+
+.cards_titulo {
+    text-align: center;
+    font-size: 35px;
+    padding: 5px;
+    color: white;
+    /* text-transform: uppercase; */
+}
+
+.img_opcoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.cards_link {
+    text-decoration: none;
+    color: inherit;
+    width: 15%;
+    transition: all 0.5s ease;
+}
+
+.cards {
+    position: relative;
+    width: 100%;
+    height: 290px;
+    border-radius: 5px;
+    overflow: hidden;
+    outline: 2px solid #ffffff;
+    box-shadow: 10px 10px 5px #0000003a;
+    transition: all 0.5s ease;
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+}
+
+.cards_link:hover .cards {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.cards::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #01223b4f;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.cards h3 {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    margin: 0;
+}
+
+.separar {
+    height: 3px;
+    background-color: #ffffff;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.separar2 {
+    height: 3px;
+    background-color: #ffffff;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.separar3 {
+    height: 2px;
+    background-image: linear-gradient(to left,  var(--fundo) 30%,var(--azul-claro) 30%);
+  background-color: var(--azul-claro);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
+}
+
+.separar4 {
+    height: 1px;
+    background-color: #ffffff00;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.436);
+}
+
+
+/*AMERICA*/
+.introducaoAmerica {
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+}
+
+.introducaoAmerica p {
+    color: #ffffff;
+    font-size: 1.3em;
+    text-align: center;
+    margin-inline: 18%;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.img_opcoesAmerica {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.img_opcoesAmerica img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.img_opcoesAmerica a {
+    text-decoration: none;
+}
+
+.cards_linkAmerica {
+    text-decoration: none;
+    color: inherit;
+    width: 25%;
+    transition: all 0.5s ease;
+}
+
+.cardsAmerica {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    overflow: hidden;
+    outline: 5px solid #ffffff;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+
+.cardsAmerica h3 {
+    position: relative;
+    background-color: #ffffff;
+    border-top: 10px solid #ffffff;
+    border-bottom: 10px solid #ffffff;
+    align-items: center;
+    justify-content: center;
+    top: 15%;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #0667b3;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 2;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+
+#purmamarca,
+#cumberland,
+#las_pozas {
+    color: var(--cor-texto-america);
+    text-shadow: none;
+    font-family: var(--fonte-titulos);
+}
+
+
+
+.destino_completo_purmamarca {
+    font-size: 1.3em;
+    /* text-shadow: 1px 1px 2px #00000099; */
+    background-image: linear-gradient(to left, #199fbdf5 30%, var(--fundo) 30%), url(../img/purmamarcaBLUR.jpg);
+    color: var(--cor-texto-america);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+    height: 600px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.destino_completo_purmamarca p,
+.destino_completo_purmamarca h2,
+.destino_completo_purmamarca ul,
+.destino_completo_purmamarca img {
+    margin-inline: 50px;
+}
+
+.destino_completo_cumberland {
+    font-size: 1.3em;
+    /* text-shadow: 1px 1px 2px #00000099; */
+    color: var(--cor-texto-america);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+    height: 600px;
+
+    background-image: linear-gradient(to left, #199fbdf5 30%, var(--fundo) 30%), url(../img/cumberlandBLUR.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.destino_completo_cumberland p,
+.destino_completo_cumberland h2,
+.destino_completo_cumberland ul,
+.destino_completo_cumberland img {
+    margin-inline: 50px;
+}
+
+.destino_completo_las_pozas {
+    font-size: 1.3em;
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5); */
+    color: var(--cor-texto-america);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+    height: 600px;
+    /* background-color: #00c9fb; */
+    background-image: linear-gradient(to left, #199fbdf5 30%, var(--fundo) 30%), url(../img/las_pozasBLUR.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.destino_completo_las_pozas p,
+.destino_completo_las_pozas h2,
+.destino_completo_las_pozas ul,
+.destino_completo_las_pozas img {
+    margin-inline: 50px;
+}
+
+
+.destino_completo_purmamarca img {
+    border-radius: 5px;
+    height: 450px;
+    outline: 2px solid var(--fundo);
+    /* box-shadow: 2px 2px 5px 3px #00000057; */
+}
+
+.destino_completo_cumberland img {
+    border-radius: 5px;
+    height: 450px;
+    outline: 2px solid var(--fundo);
+    /* box-shadow: 2px 2px 5px 3px #00000057; */
+}
+
+.destino_completo_las_pozas img {
+    border-radius: 5px;
+    height: 450px; 
+    outline: 3px solid var(--fundo);
+    /* box-shadow: 2px 2px 5px 3px #00000057; */
+}
+
+.tabela_container {
+    margin: 50px auto 40px auto;
+    width: 60%;
+    color: white;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.tabela_container table {
+    width: 100%;
+    height: 250px;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    /* border-radius: 5px; */
+    overflow: hidden;
+    background-color: #04cdff;
+
+    /* background: rgba(0, 0, 0, 0.3); */
+}
+
+.tabela_container th {
+        width: 20%;
+    background: #00abd6;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.tabela_container td 
+{
+    width: 20%;
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* .tabela_container tbody tr:hover {
+    background: rgba(0, 199, 251, 0.4);
+    cursor: pointer;
+    transition: background 0.3s;
+} */
+
+
+#area_final {
+    height: 500px;
+    background-color: var(--fundo);
+    background-size: cover;
+    background-position: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-position: absolute;
+}
+
+#area_final h2{
+    text-align: center;
+    color: var(--cor-texto-america);
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 25px;
+}
+
+/*OCEANIA*/
+
+#oceania {
+    margin: 20px 0px 20px 0px;
+}
+
+#oceania h1 {
+    margin: 0;
+}
+
+.introducaoOceania {
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+}
+
+.introducaoOceania p {
+    color: #ffffff;
+    font-size: 1.3em;
+    text-align: center;
+    margin-inline: 18%;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.img_opcoesOceania {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.img_opcoesOceania img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.img_opcoesOceania a {
+    text-decoration: none;
+}
+
+.cards_linkOceania {
+    text-decoration: none;
+    color: inherit;
+    width: 25%;
+    transition: all 0.5s ease;
+}
+
+.cardsOceania {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    overflow: hidden;
+    outline: 5px solid #ffffff;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+
+.cardsOceania h3 {
+    position: relative;
+    background-color: #ffffff;
+    border-top: 10px solid #ffffff;
+    border-bottom: 10px solid #ffffff;
+    align-items: center;
+    justify-content: center;
+    top: 15%;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #0667b3;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 2;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+
+.conteudoOceania {
+    background-image: var(--gradiente-img), url(../img/oceaniaBack.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+.destino_completo_vale_do_fogo {
+    font-size: 1.3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+    height: 600px;
+    /* background-image: var(--gradiente-img); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destino_completo_vale_do_fogo img {
+
+    box-shadow: 2px 2px 5px 3px #00000057;
+}
+
+
+.destino_completo_vale_do_fogo p,
+.destino_completo_vale_do_fogo h2,
+.destino_completo_vale_do_fogo ul,
+.destino_completo_vale_do_fogo img {
+    margin-inline: 50px;
+}
+
+.destino_completo_nan_madol {
+    font-size: 1.3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+    height: 600px;
+    /* background-image: var(--gradiente-img), url('../img/nan_madolBLUR.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destino_completo_nan_madol p,
+.destino_completo_nan_madol h2,
+.destino_completo_nan_madol ul,
+.destino_completo_nan_madol img {
+    margin-inline: 50px;
+}
+
+.destino_completo_simpson_desert {
+    font-size: 1.3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+    height: 600px;
+    /* background-image: var(--gradiente-img), url('../img/simpson_desertBLUR.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destino_completo_simpson_desert p,
+.destino_completo_simpson_desert h2,
+.destino_completo_simpson_desert ul,
+.destino_completo_simpson_desert img {
+    margin-inline: 50px;
+}
+
+.destino_completo_vale_do_fogo img {
+    border-radius: 5px;
+    height: 450px;
+    outline: 2px solid white;
+    box-shadow: 2px 2px 5px 3px #00000094;
+}
+
+
+
+.destino_completo_nan_madol img {
+    border-radius: 5px;
+    height: 450px;
+    outline: 2px solid white;
+    box-shadow: 2px 2px 5px 3px #00000094;
+}
+
+.destino_completo_simpson_desert img {
+    border-radius: 5px;
+    height: 450px;
+    outline: 2px solid white;
+    box-shadow: 2px 2px 5px 3px #00000094;
+}
+
+/*SOBRE NOS*/
+.infoSobreNos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px 0px 20px;
+}
+
+.linksSociais{
+    /* background-color: #00abd6; */
+    text-align: left;
+
+}
+.linksSociais a{
+color: var(--cor-texto);
+margin-top: 0;
+text-align: left;
+}
+
+.social_link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 80%;
+    margin-bottom: 10px;
+    margin-right: 10%;
+}
+
+.social_link img {
+    width: 20%;
+    padding: 5%;
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-inline: auto;
+    width: 80%;
+    /* width: 90%; */
+    font-family: var(--fonte-texto);
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    height: 450px;
+}
+
+#sobrenos {
+    margin: 20px 0px 20px 0px;
+}
+
+.sobreNos_texto {
+    /* background-color: #00abd6; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobreNos_texto p {
+    text-align: center;
+    width: 60%;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    text-shadow: 1px 1px 2px #00000099;
+    font-size: 1.3em;
+    margin-bottom: 50px;
+}
+
+.sobreNos_texto h1 {
+    /* margin-top: 3%; */
+    padding-top: 20px;
+    /* margin-bottom: 5%; */
+    color: white;
+}
+
+#sobrenos h3 {
+    color: var(--cor-texto);
+    text-shadow: 1px 1px 2px #00000099;
+
+    font-weight: bold;
+
+}
+
+#sobrenos h3:hover {
+    color: #ff7903ce;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #00000099;
+
+    transition: all 0.3s;
+}
+
+.sobre a {
+    text-decoration: none;
+}
+
+.sobrenos {
+    text-decoration: none;
+    width: calc(33.33% - 40px);
+    background-color: #81888d4f;
+    margin-bottom: 5%;
+    position: static;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    overflow: hidden;
+    outline: 2px solid #ffffff;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+
+/*SPAN GERAL*/
+.nomeDestino {
+    color: var(--laranja);
+    font-weight: bold;
+}
+
+ul li::marker {
+    color: var(--laranja);
+}
+
+.nomeDestinoAm{
+      color: var(--azul-claro);
+    /* text-shadow: 1px 1px 1px #044e8681; */
+
+    font-weight: bold;
+}
+.lista_america li::marker{
+    color:#0667b3;
+}
+
+footer {
+    background-image: var(--gradiente-header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-texto);
+    text-shadow: 1px 1px 2px #00000099;
+    height: 40px;
+    font-family: var(--fonte-texto);
+}
+
+
+footer p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor-texto);
+}
