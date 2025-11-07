@@ -867,12 +867,11 @@ text-align: left;
 .sobre {
     display: flex;
     justify-content: space-between;
-    gap: 70px;
+    /* gap: 70px; */
     margin-top: 0%;
     margin-bottom: 0%;
     margin-inline: auto;
-    width: 80%;
-    /* width: 90%; */
+    width: 90%;
     font-family: var(--fonte-texto);
     text-align: center;
     font-size: 1.3em;
@@ -931,9 +930,9 @@ text-align: left;
 
 .sobrenos {
     text-decoration: none;
-    width: calc(33.33% - 40px);
     background-color: #81888d4f;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
+     margin: 1%;
     position: static;
     width: 100%;
     height: auto;
@@ -984,4 +983,5 @@ footer p {
 footer a {
     text-decoration: none;
     color: var(--cor-texto);
+
 }
