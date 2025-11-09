@@ -14,14 +14,21 @@ let imagens = [
     'img/imgGaleria9.jpg'];
 
     let i = 0;
-    let intervalo = 0;
     
     setInterval(function() {
-        divGaleria1.src = imagens[i];
-        divGaleria2.src = imagens[i+1];
-        divGaleria3.src = imagens[i+2];
+        divGaleria1.style.opacity = 0;
+        divGaleria2.style.opacity = 0;
+        divGaleria3.style.opacity = 0;
 
-        i+=3;
+    //faz as imagens aparecerem suavemente
+    setTimeout(function () {
+        divGaleria1.src = imagens[i % imagens.length];
+        divGaleria2.src = imagens[(i + 1) % imagens.length];
+        divGaleria3.src = imagens[(i + 2) % imagens.length];
 
-        if(i > imagens.length - 1) i = 0;
+        divGaleria1.style.opacity = 1;
+        divGaleria2.style.opacity = 1;
+        divGaleria3.style.opacity = 1;
+    }, 500);
+        i+= 3;
     }, 3000);
