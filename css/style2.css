@@ -33,7 +33,7 @@ body{
 
 .claro{
      --cor-texto-asia :#023962;
-     --fundo: #D7F3F3;
+     --fundo: #eafafa;
      --gradiente-header: linear-gradient(to left, var(--azul-claro) 0%, var(--azul-escuro) 100%);
     --gradiente-img: linear-gradient(to left, #2d3f6198 0%, #367baf61 80%);
 }
@@ -546,4 +546,5 @@ footer a{
     text-decoration: none;
     color: white;
 }
+
 
