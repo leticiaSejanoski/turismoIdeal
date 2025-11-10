@@ -192,7 +192,7 @@ h1 {
 .img1, .img2, .img3 {
     transition: opacity 0.9s ease-in-out; /*aplica uma transição suave*/
     opacity: 1; /*deixa o elemento totalmente visível*/
-
+}
 
 /* css galeria2  */
 
